@@ -15,10 +15,10 @@ const Services = () => {
           <span className="text-gradient">| </span> Services
         </h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="card  p-4 ">
+          <div className="card  p-4 gap-6">
             <Image src={Website} alt="Website"  height={200}/>
-            <div className="flex flex-col py-2 gap-2 my-2">
-              <h3 className="card-title text-gradient ">Websites</h3>
+            <div className="flex flex-col py-2 gap-2 my-2 text-center">
+              <h3 className="text-2xl font-semibold text-gradient  ">Websites</h3>
               <p className="">
                 You are having a restaurant, a start-up, a small business. Do
                 you need a website?
@@ -26,20 +26,20 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="card  p-4 ">
+          <div className="card  p-4 gap-6">
             <Image src={Webapp} alt="wep applications" height={200}/>
-            <div className="flex flex-col py-2 gap-2 my-2">
-              <h3 className="card-title text-gradient">Web applications</h3>
+            <div className="flex flex-col py-2 gap-2 my-2 text-center">
+              <h3 className="text-2xl font-semibold text-gradient">Web applications</h3>
               <p className="">
                 Do you need a web application that will be able to run on multiple devices?
               </p>
             </div>
           </div>
 
-          <div className="card  p-4 ">
+          <div className="card  p-4 gap-6">
             <Image src={Production} alt="production" height={200}/>
-            <div className="flex flex-col py-2 gap-2 my-6">
-              <h3 className="card-title text-gradient">Productions</h3>
+            <div className="flex flex-col py-2 gap-2 my-6 text-center">
+              <h3 className="text-2xl font-semibold text-gradient">Productions</h3>
               <p className="">
                 Do you have an amazing idea, but do not know how to make it real?
               </p>
