@@ -16,7 +16,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Stone</title>
         <link rel="icon" href="/images/stone-icon.svg" />
-
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Hi, I'm Sang Quach who is a React developer with industry experience building websites and web applications" />
+        
       </Head>
 
       <header>

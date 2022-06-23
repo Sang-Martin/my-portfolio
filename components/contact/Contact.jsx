@@ -18,6 +18,7 @@ const Contact = () => {
             layout="responsive"
           />
           <form
+            action="/"
             netlify
             method="post"
             name="contact"
