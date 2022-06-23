@@ -18,16 +18,16 @@ const Contact = () => {
             layout="responsive"
           />
           <form
-            action="/"
+            action="/pages/success"
             netlify
             method="post"
             name="contact"
-            netlify-honeypot="bot-field"
+            // netlify-honeypot="bot-field"
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
-            <label hidden>
+            {/* <label hidden>
               Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
+            </label> */}
             <input
               name="name"
               type="text"
