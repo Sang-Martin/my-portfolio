@@ -8,6 +8,7 @@ import About from '../components/about/About'
 import Services from '../components/services/Services'
 import Skills from '../components/skills/Skills'
 import Contact from '../components/contact/Contact'
+import Portfolio from '../components/portfolio/Portfolio'
 
 const Home: NextPage = () => {
   return (
@@ -31,16 +32,17 @@ const Home: NextPage = () => {
         <About />
         {/* Skills */}
         <Skills />
+        {/* Portfolio */}
+        <Portfolio />
         {/* Service */}
         <Services />
-        {/* Portfolio */}
-
         {/* Contact */}
         <Contact/>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
+      <footer className="flex h-12 w-full items-center justify-center border-t bg-neutral text-white">
         {/* social media */}
+        <h5>Stone - © Copyright 2022</h5>
       </footer>
     </div>
   )

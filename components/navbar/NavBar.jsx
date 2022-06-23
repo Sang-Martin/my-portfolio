@@ -16,28 +16,28 @@ const NavBar = () => {
           {/* nav */}
           <nav className=" hidden md:inline-block ">
             <ul className="flex flex-row gap-4 font-medium uppercase">
-              <li>
-                <a href="#about" className=" hover:text-blue-500">
+              <li className="hover:scale-105">
+                <a href="#about" className=" hover:text-indigo-500 ">
                   About
                 </a>
               </li>
-              <li>
-                <a href="#skills" className="hover:text-blue-500">
+              <li className="hover:scale-105">
+                <a href="#skills" className="hover:text-indigo-500">
                   Skills
                 </a>
               </li>
-              <li>
-                <a href="#services" className="hover:text-blue-500">
+              <li className="hover:scale-105">
+                <a href="#services" className="hover:text-indigo-500">
                   Services
                 </a>
               </li>
-              {/* <li>
-                <a href="#portfolio" className="hover:text-blue-500">
+              <li className="hover:scale-105">
+                <a href="#portfolio" className="hover:text-indigo-500">
                   Portfolio
                 </a>
-              </li> */}
-              <li>
-                <a href="#contact" className="hover:text-blue-500">
+              </li>
+              <li className="hover:scale-105">
+                <a href="#contact" className="hover:text-indigo-500">
                   Contact
                 </a>
               </li>

@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 .container {
-    @apply px-4 mx-auto max-w-6xl
+    @apply px-4 md:px-12 mx-auto max-w-6xl
 }
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
 
 .text-gradient {
     @apply bg-gradient-to-r text-transparent from-[#3B82F6] to-[#9600ff] bg-clip-text

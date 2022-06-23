@@ -12,7 +12,7 @@ const Services = () => {
       <div className="container px-2 py-24">
         {/* title */}
         <h2 className="mb-32 text-center text-4xl font-bold">
-          <span className="text-gradient">| </span> Services
+          <span className="text-indigo-500">| </span> Services
         </h2>
         <div className="grid gap-4 md:grid-cols-3">
           <div className="card  p-4 gap-6">
@@ -38,7 +38,7 @@ const Services = () => {
 
           <div className="card  p-4 gap-6">
             <Image src={Production} alt="production" height={200}/>
-            <div className="flex flex-col py-2 gap-2 my-6 text-center">
+            <div className="flex flex-col py-2 gap-2 my-2 text-center">
               <h3 className="text-2xl font-semibold text-gradient">Productions</h3>
               <p className="">
                 Do you have an amazing idea, but do not know how to make it real?
