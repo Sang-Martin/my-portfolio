@@ -23,10 +23,11 @@ const Contact = () => {
             layout="responsive"
           />
           <form
-            data-netlify="true"
-            method="post"
+            method="POST"
             name="contact"
             netlify-honeypot="bot-field"
+            data-netlify="true"
+            onSubmit='submit'
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
             <label hidden>
@@ -34,30 +35,35 @@ const Contact = () => {
             </label>
             <input
               name="name"
+              id="name"
               type="text"
               placeholder="Your name ..."
               className="input input-bordered input-primary w-full max-w-md "
             />
             <input
               name="email"
+              id="email"
               type="email"
               placeholder="Your email ..."
               className="input input-bordered input-primary w-full max-w-md "
             />
             <textarea
               name="message"
+              id='message'
               className="textarea textarea-primary w-full max-w-md"
               placeholder="Your message ..."
               rows="5"
             />
             {/* <div data-netlify-recaptcha="true"></div> */}
-            <button
+            {/* <button
               className="btn btn-primary w-full max-w-md"
               type="submit"
-              onClick={onhandleSubmit}
+              name="submit"
+              // onClick={onhandleSubmit}
             >
               Send message
-            </button>
+            </button> */}
+            <input type="submit" value="Send message" className="btn btn-primary w-full max-w-md"/>
           </form>
         </div>
       </div>
