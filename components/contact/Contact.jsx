@@ -5,8 +5,8 @@ import BusinessCard from '../../public/images/stone-card.svg'
 
 const Contact = () => {
   const onhandleSubmit = (e) => {
-    // e.preventDefault();
-    // alert("Done")
+    e.preventDefault();
+    alert("Done")
   }
 
   return (
@@ -23,7 +23,6 @@ const Contact = () => {
             layout="responsive"
           />
           <form
-            action="success"
             data-netlify="true"
             method="post"
             name="contact"
@@ -55,7 +54,7 @@ const Contact = () => {
             <button
               className="btn btn-primary w-full max-w-md"
               type="submit"
-              // onClick={onhandleSubmit}
+              onClick={onhandleSubmit}
             >
               Send message
             </button>
