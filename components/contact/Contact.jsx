@@ -29,15 +29,16 @@ const Contact = () => {
           <form
             method="POST"
             name="contact"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
             data-netlify="true"
             onSubmit={onhandleSubmit}
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
-            <label hidden>
+            {/* <label hidden>
               Don't fill this out if you're human: <input name="bot-field" />
-            </label>
+            </label> */}
+            <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" hidden>Name</label>
             <input
               name="name"
