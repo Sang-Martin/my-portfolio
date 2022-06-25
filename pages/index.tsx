@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <Contact/>
       </main>
 
-      <footer className="flex h-12 w-full items-center justify-center border-t bg-neutral text-white">
+      <footer className="flex h-12 w-full items-center justify-center bg-neutral text-white">
         {/* social media */}
         <h5>Stone - © Copyright 2022</h5>
       </footer>

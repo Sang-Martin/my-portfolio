@@ -4,6 +4,12 @@ import Image from 'next/image'
 import BusinessCard from '../../public/images/stone-card.svg'
 
 const Contact = () => {
+
+  const onhandleSubmit = (e) => {
+    // e.preventDefault();
+    // alert("Done")
+  }
+
   return (
     <section className="flex min-h-fit" id="contact">
       <div className="container px-2 py-24">
@@ -18,16 +24,15 @@ const Contact = () => {
             layout="responsive"
           />
           <form
-            action="/pages/success"
-            netlify
+            data-netlify-recaptcha="true"
+            data-netlify="true"
             method="post"
             name="contact"
-            // netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
-            {/* <label hidden>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label> */}
+           
+            <label></label>
             <input
               name="name"
               type="text"
@@ -46,7 +51,8 @@ const Contact = () => {
               placeholder="Your message ..."
               rows="5"
             />
-            <button className="btn btn-primary w-full max-w-md">
+            <div data-netlify-recaptcha="true"></div>
+            <button className="btn btn-primary w-full max-w-md" type='submit' onClick={onhandleSubmit} >
               Send message
             </button>
           </form>
