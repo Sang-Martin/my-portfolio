@@ -6,7 +6,7 @@ import BusinessCard from '../../public/images/stone-card.svg'
 const Contact = () => {
   const onhandleSubmit = (e) => {
     // e.preventDefault();
-    // alert("Done")
+    // alert("Thank you for your message!")
   }
 
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
             // netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
             data-netlify="true"
-            // onSubmit={onhandleSubmit}
+            onSubmit={onhandleSubmit}
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
             {/* <label hidden>
