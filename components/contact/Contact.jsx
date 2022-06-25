@@ -5,7 +5,7 @@ import BusinessCard from '../../public/images/stone-card.svg'
 
 const Contact = () => {
   const onhandleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     alert("Thank you for your message!")
   }
 
