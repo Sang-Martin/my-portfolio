@@ -5,7 +5,7 @@ import BusinessCard from '../../public/images/stone-card.svg'
 
 const Contact = () => {
   const onhandleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     alert("Done")
   }
 
@@ -25,14 +25,14 @@ const Contact = () => {
           <form
             method="POST"
             name="contact"
-            netlify-honeypot="bot-field"
+            // netlify-honeypot="bot-field"
             data-netlify="true"
-            onSubmit='submit'
+            onSubmit={onhandleSubmit}
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
-            <label hidden>
+            {/* <label hidden>
               Don't fill this out if you're human: <input name="bot-field" />
-            </label>
+            </label> */}
             <input
               name="name"
               id="name"
