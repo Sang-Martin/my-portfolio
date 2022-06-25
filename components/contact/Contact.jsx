@@ -23,7 +23,7 @@ const Contact = () => {
             layout="responsive"
           />
           <form
-            action=""
+            action="https://sangminh.ca/"
             data-netlify="true"
             method="post"
             name="contact"
