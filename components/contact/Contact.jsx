@@ -1,12 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 
 import BusinessCard from '../../public/images/stone-card.svg'
 
 const Contact = () => {
   const onhandleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for your message!")
+    // e.preventDefault();
+
+    const router = useRouter()
+    router.push('/')
+
   }
 
   return (
@@ -25,15 +29,15 @@ const Contact = () => {
           <form
             method="POST"
             name="contact"
-            // netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
             // data-netlify-recaptcha="true"
             data-netlify="true"
             onSubmit={onhandleSubmit}
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
-            {/* <label hidden>
+            <label hidden>
               Don't fill this out if you're human: <input name="bot-field" />
-            </label> */}
+            </label>
             <label htmlFor="name" hidden>Name</label>
             <input
               name="name"
