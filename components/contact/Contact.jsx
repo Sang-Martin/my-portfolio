@@ -6,7 +6,7 @@ import BusinessCard from '../../public/images/stone-card.svg'
 const Contact = () => {
   const onhandleSubmit = (e) => {
     // e.preventDefault();
-    // alert("Thank you for your message!")
+    alert("Thank you for your message!")
   }
 
   return (
@@ -58,7 +58,7 @@ const Contact = () => {
               placeholder="Your message ..."
               rows="5"
             />
-            {/* <div data-netlify-recaptcha="true"></div> */}
+
             {/* <div data-netlify-recaptcha="true"></div> */}
             {/* <button
               className="btn btn-primary w-full max-w-md"
