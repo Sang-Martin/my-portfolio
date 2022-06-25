@@ -26,14 +26,15 @@ const Contact = () => {
             method="POST"
             name="contact"
             // netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
+            // data-netlify-recaptcha="true"
             data-netlify="true"
-            onSubmit={onhandleSubmit}
+            // onSubmit={onhandleSubmit}
             className="mx-auto flex w-full flex-col items-center justify-center gap-8 "
           >
             {/* <label hidden>
               Don't fill this out if you're human: <input name="bot-field" />
             </label> */}
+            <label htmlFor="name" hidden>Name</label>
             <input
               name="name"
               id="name"
@@ -41,6 +42,7 @@ const Contact = () => {
               placeholder="Your name ..."
               className="input input-bordered input-primary w-full max-w-md "
             />
+            <label htmlFor="email" hidden>Email</label>
             <input
               name="email"
               id="email"
@@ -48,6 +50,7 @@ const Contact = () => {
               placeholder="Your email ..."
               className="input input-bordered input-primary w-full max-w-md "
             />
+            <label htmlFor="message" hidden>Message</label>
             <textarea
               name="message"
               id='message'
@@ -55,7 +58,7 @@ const Contact = () => {
               placeholder="Your message ..."
               rows="5"
             />
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
             {/* <div data-netlify-recaptcha="true"></div> */}
             {/* <button
               className="btn btn-primary w-full max-w-md"
